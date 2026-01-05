@@ -1,0 +1,41 @@
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: "B Titr", "Georgia", serif;
+  background: radial-gradient(circle at top, rgba(94, 167, 180, 0.35), transparent 45%),
+    linear-gradient(135deg, rgba(230, 156, 105, 0.2), rgba(10, 12, 12, 0.95));
+  color: #f4f3f0;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cinzel", "Times New Roman", serif;
+}
+
+::selection {
+  background: rgba(94, 167, 180, 0.45);
+  color: #050606;
+}
+
+.enter-stage {
+  opacity: 0;
+  transform: translateY(18px);
+  animation: rise-in 800ms ease forwards;
+  animation-delay: var(--delay, 0ms);
+}
+
+@keyframes rise-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
