@@ -1,24 +1,24 @@
 <template>
   <article
-    class="group flex h-full flex-col justify-between gap-6 rounded-3xl border border-white/10 bg-ink-900/70 p-6 shadow-glow backdrop-blur transition hover:-translate-y-1 hover:border-ember-500/60"
+    class="group flex h-full flex-col justify-between gap-6 rounded-3xl border border-ink-900/10 bg-white/80 p-6 shadow-soft transition hover:-translate-y-1 hover:border-ink-900/30"
   >
     <div class="space-y-4">
-      <div class="flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.2em] text-mist-200">
+      <div class="flex flex-wrap items-center gap-2 text-xs uppercase tracking-[0.25em] text-ink-400">
         <TagPill>{{ article.source || 'Unknown source' }}</TagPill>
         <TagPill v-if="article.language">{{ article.language }}</TagPill>
       </div>
-      <h3 class="text-2xl text-mist-50 transition group-hover:text-ember-400">
+      <h3 class="text-2xl text-ink-900 transition group-hover:text-ink-700">
         {{ article.title || 'Untitled report' }}
       </h3>
-      <p class="text-sm text-mist-100">
+      <p class="text-sm text-ink-600">
         {{ excerpt }}
       </p>
     </div>
-    <div class="flex items-center justify-between text-xs uppercase tracking-[0.25em] text-mist-200">
+    <div class="flex items-center justify-between text-xs uppercase tracking-[0.25em] text-ink-400">
       <span>{{ publishedLabel }}</span>
       <NuxtLink
         :to="`/articles/${article.id}`"
-        class="text-ember-400 transition hover:text-ember-200"
+        class="text-ink-700 transition hover:text-ink-900"
       >
         Read
       </NuxtLink>

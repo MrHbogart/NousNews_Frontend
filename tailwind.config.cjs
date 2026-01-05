@@ -15,6 +15,9 @@ module.exports = {
           900: '#101314',
           800: '#1d2324',
           700: '#2c3435',
+          600: '#434c4d',
+          500: '#5d6667',
+          400: '#7b8687',
         },
         mist: {
           50: '#f4f3f0',
@@ -38,6 +41,7 @@ module.exports = {
       },
       boxShadow: {
         glow: '0 12px 40px rgba(12, 14, 18, 0.45)',
+        soft: '0 18px 40px rgba(17, 14, 10, 0.08)',
       },
       backgroundImage: {
         noise:

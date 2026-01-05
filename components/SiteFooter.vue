@@ -1,8 +1,8 @@
 <template>
-  <footer class="mt-12 border-t border-white/10 pt-6 text-sm text-mist-200">
-    <div class="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
-      <p>NousNews Frontend · Built with Nuxt SSR + Tailwind</p>
-      <p class="text-mist-100">Data source: crawler.miyangroup.com</p>
+  <footer class="mt-12 border-t border-ink-900/10 pt-6 text-xs uppercase tracking-[0.25em] text-ink-400">
+    <div class="flex flex-col items-start justify-between gap-3 sm:flex-row sm:items-center">
+      <p>NousNews · Minimal crawl interface</p>
+      <p>Powered by crawler API</p>
     </div>
   </footer>
 </template>
