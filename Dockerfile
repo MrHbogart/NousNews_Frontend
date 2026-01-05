@@ -9,7 +9,7 @@ ENV NUXT_TELEMETRY_DISABLED=1
 
 COPY package.json .
 
-RUN NODE_ENV=development npm install
+RUN npm install --include=dev
 
 COPY . .
 
