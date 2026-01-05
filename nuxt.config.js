@@ -9,10 +9,13 @@ export default defineNuxtConfig({
   },
   css: ['~/assets/css/fonts.css', '~/assets/css/tailwind.css', '~/assets/css/app.css'],
   runtimeConfig: {
-    apiBaseUrl: process.env.NUXT_API_BASE_URL || 'http://backend:8000/api',
+    apiBaseUrl:
+      process.env.NUXT_INTERNAL_API_BASE_URL ||
+      process.env.NUXT_API_BASE_URL ||
+      'http://127.0.0.1:8081/api',
     public: {
-      apiBaseUrl: process.env.NUXT_PUBLIC_API_BASE_URL || 'http://localhost:8081/api',
-      siteDomain: process.env.NUXT_PUBLIC_SITE_DOMAIN || 'http://localhost:3001',
+      apiBaseUrl: process.env.NUXT_PUBLIC_API_BASE_URL || 'http://127.0.0.1:8081/api',
+      siteDomain: process.env.NUXT_PUBLIC_SITE_DOMAIN || 'http://127.0.0.1:3001',
     },
   },
   components: [{ path: '~/components', pathPrefix: false }],

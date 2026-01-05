@@ -6,8 +6,13 @@ services:
     restart: unless-stopped
     env_file:
       - .env
+    environment:
+      NUXT_INTERNAL_API_BASE_URL: http://172.30.50.11:8000/api
     ports:
       - "3001:3001"
+    networks:
+      nousnews:
+        ipv4_address: 172.30.50.12
     healthcheck:
       test:
         [
@@ -23,3 +28,9 @@ services:
 
 volumes:
   frontend_data:
+
+networks:
+  nousnews:
+    ipam:
+      config:
+        - subnet: 172.30.50.0/24
