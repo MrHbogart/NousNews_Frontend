@@ -3,11 +3,10 @@
 }
 
 body {
-  font-family: "B Titr", "Georgia", serif;
+  font-family: "Merriweather", "Georgia", serif;
   background:
-    radial-gradient(circle at 20% 10%, rgba(230, 220, 208, 0.8), transparent 55%),
-    linear-gradient(180deg, rgba(252, 248, 242, 0.95), rgba(244, 238, 230, 0.95));
-  color: #171514;
+    linear-gradient(180deg, rgba(250, 248, 244, 0.96), rgba(242, 238, 231, 0.98));
+  color: #101314;
   min-height: 100vh;
 }
 
@@ -19,7 +18,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Cinzel", "Times New Roman", serif;
+  font-family: "Merriweather", "Georgia", serif;
 }
 
 ::selection {
@@ -29,8 +28,8 @@ h4 {
 
 .enter-stage {
   opacity: 0;
-  transform: translateY(18px);
-  animation: rise-in 700ms ease forwards;
+  transform: translateY(10px);
+  animation: rise-in 500ms ease forwards;
   animation-delay: var(--delay, 0ms);
 }
 

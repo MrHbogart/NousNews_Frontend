@@ -36,8 +36,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        display: ['"Cinzel"', '"Times New Roman"', 'serif'],
-        body: ['"B Titr"', '"Georgia"', 'serif'],
+        display: ['"Merriweather"', '"Georgia"', 'serif'],
+        body: ['"Merriweather"', '"Georgia"', 'serif'],
       },
       boxShadow: {
         glow: '0 12px 40px rgba(12, 14, 18, 0.45)',
